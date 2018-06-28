@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController">
+            <connections>
+                <outlet property="view" destination="2" id="RRd-Eg-VrN"/>
+                <outlet property="idText" destination="136" id="name-outlet-136"/>
+                <outlet property="firstNameText" destination="137" id="name-outlet-137"/>
+                <outlet property="lastNameText" destination="138" id="name-outlet-138"/>
+                <outlet property="saveButton" destination="139" id="name-outlet-139"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" id="133" translatesAutoresizingMaskIntoConstraints="NO" distribution="equalSpacing" spacing="20" misplaced="YES">
+                    <rect key="frame" x="182" y="159" width="49" height="180"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="136" translatesAutoresizingMaskIntoConstraints="NO" placeholder="ID">
+                            <rect key="frame" x="0.0" y="0.0" width="49" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="137" translatesAutoresizingMaskIntoConstraints="NO" placeholder="First Name">
+                            <rect key="frame" x="0.0" y="50" width="49" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="138" translatesAutoresizingMaskIntoConstraints="NO" placeholder="Last Name">
+                            <rect key="frame" x="0.0" y="100" width="49" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="139" translatesAutoresizingMaskIntoConstraints="NO">
+                            <rect key="frame" x="0.0" y="150" width="49" height="30"/>
+                            <state key="normal" title="Save"/>
+                            <connections>
+                                <action selector="SaveButton_TouchUpInside:" destination="-1" id="150" eventType="touchUpInside"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint id="140" firstItem="2" firstAttribute="trailing" secondItem="133" secondAttribute="trailing" constant="20"/>
+                <constraint id="143" firstItem="133" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20"/>
+                <constraint id="144" firstItem="133" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "300140529389",
+    "firebase_url": "https://lhpexamarindemo.firebaseio.com",
+    "project_id": "lhpexamarindemo",
+    "storage_bucket": "lhpexamarindemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300140529389:android:3913135315502f54",
+        "android_client_info": {
+          "package_name": "com.offmadisonave.lhpe_xamarin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300140529389-97koodldtcf9ippjt71rtj52p057j636.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "300140529389-97koodldtcf9ippjt71rtj52p057j636.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCBRbL8L8VBzbytgABvuxcjfBlPPDu0FQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
