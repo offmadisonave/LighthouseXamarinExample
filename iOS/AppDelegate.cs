@@ -5,6 +5,7 @@ using CoreLocation;
 using Plugin.Permissions;
 using Plugin.Permissions.Abstractions;
 using Estimote;
+using LHPEXamarinSample.iOS.ViewControllers;
 
 namespace LHPEXamarinSample.iOS
 {
@@ -90,6 +91,13 @@ namespace LHPEXamarinSample.iOS
 
             // initialize lighhouse
             await Lighthouse.Start(LHPEEnvironment, LHPEAppId, LHPEAppKey);  
+
+            // Change root view controller
+            var window = UIApplication.SharedApplication.KeyWindow;
+            var storyboard = UIStoryboard.FromName("Main", null);
+            var root = storyboard.InstantiateViewController("SignalList");
+            window.RootViewController = root;
+
         }
 
         private async void StartForegroundLocationTracking()
