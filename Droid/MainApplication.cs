@@ -19,6 +19,7 @@ using Plugin.Permissions.Abstractions;
 
 using Java.Lang;
 using Java.Util;
+using Android.Content;
 
 namespace LHPEXamarinSample.Droid
 {
@@ -148,6 +149,10 @@ namespace LHPEXamarinSample.Droid
 
             // Initialize lhpe
             await Lighthouse.Start(LHPEEnvironment, LHPEAppId, LHPEAppKey);
+
+            // Stop Loading Activity, Start Main Activity
+            var intent = new Intent(this, typeof(LHPEXamarinSample.Droid.MainActivity));
+            StartActivity(intent);
 
         }
 

@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -165,6 +164,7 @@
     <Compile Include="Resources\layout\signal_activity.cs" />
     <Compile Include="Activities\SignalActivity.cs" />
     <Compile Include="MyFirebaseIIDService.cs" />
+    <Compile Include="Activities\LoadingActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\AboutAssets.txt" />
@@ -194,6 +194,7 @@
     <AndroidResource Include="Resources\layout\user_form.axml" />
     <AndroidResource Include="Resources\menu\main.xml" />
     <AndroidResource Include="Resources\layout\main.xml" />
+    <AndroidResource Include="Resources\layout\loading.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fragments\" />
